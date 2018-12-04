@@ -42,7 +42,7 @@ class RedisCache(Cache):
         # properties
         readonly(self, 'host', lambda: host)
         readonly(self, 'port', lambda: port)
-        readonly(self, 'password', lambda: port)
+        readonly(self, 'password', lambda: password)
 
     def set(self, key, value, **kwargs):
         try:
